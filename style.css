@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+@-webkit-keyframes ilkAnimasyon {
+ 0% {
+ margin-left:60px;
+}
+50%
+{
+	margin-left:250px;
+	-webkit-transform:rotate(0deg);
+}
+ 100% {
+ margin-left:250px;
+  background-color:#999;
+ -webkit-transform:rotate(360deg);
+ border-radius:20px;
+}
+}
+#div1 {
+	margin:60px;
+	width:100px;
+	height:100px;
+	background-color:#CCC;
+	-webkit-animation: ilkAnimasyon 3s  alternate 2  both;/* forward sonda bitirir*//* both sonad durur*/
+	animation-delay:2s;
+}
